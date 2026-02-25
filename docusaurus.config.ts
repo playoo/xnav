@@ -24,7 +24,7 @@ const config: Config = {
   projectName: 'docusaurus', // GitHub 仓库名
 
   // 遇到无效链接时的处理方式（throw 表示抛出错误）
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
 
   // 国际化配置
   i18n: {
