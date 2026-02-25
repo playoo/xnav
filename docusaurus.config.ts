@@ -38,14 +38,14 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts', // 侧边栏配置文件路径
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', // 编辑文档的链接
+          editUrl: 'https://github.com/playoo/xnav/blob/main/', // 编辑文档的链接
         },
         blog: {
           showReadingTime: true, // 显示阅读时长
           blogSidebarCount: 10, // 博客侧边栏显示的文章数量
           blogSidebarTitle: '最新文章', // 博客侧边栏标题
           postsPerPage: 5, // 每页显示的博客文章数
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', // 编辑博客的链接
+          editUrl: 'https://github.com/playoo/xnav/blob/main/', // 编辑博客的链接
           onInlineTags: 'warn', // 内联标签警告
           onInlineAuthors: 'warn', // 内联作者警告
           onUntruncatedBlogPosts: 'warn', // 未截断博客文章警告
@@ -77,19 +77,19 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'docsCategorySidebar',
           position: 'left',
-          label: '文档类',
+          label: '🗂️文档类',
         },
         {
           type: 'docSidebar',
           sidebarId: 'urlCategorySidebar',
           position: 'left',
-          label: '网址类',
+          label: '💟网址类',
         },
-        { to: '/blog', label: '博客', position: 'left' },
-        { to: '/thoughts', label: '碎碎念', position: 'left' },
-        { to: '/about', label: '关于', position: 'left' },
+        { to: '/blog', label: '📝博客', position: 'left' },
+        { to: '/thoughts', label: '💬碎碎念', position: 'left' },
+        { to: '/about', label: '📃关于', position: 'right' },
         {
-          href: 'https://github.com/yourusername/your-repo',
+          href: 'https://github.com/playoo/xnav',
           label: 'GitHub',
           position: 'right',
         },
