@@ -20,8 +20,8 @@ const config: Config = {
   baseUrl: '/',
 
   // GitHub Pages 部署相关配置
-  organizationName: 'facebook', // GitHub 组织/用户名
-  projectName: 'docusaurus', // GitHub 仓库名
+  organizationName: 'playoo', // GitHub 组织/用户名
+  projectName: 'xnav', // GitHub 仓库名
 
   // 遇到无效链接时的处理方式（throw 表示抛出错误）
   onBrokenLinks: 'warn',
