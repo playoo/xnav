@@ -1,0 +1,35 @@
+name: Deploy to GitHub Pages
+
+on:
+  # 当推送到 main/master 分支时触发部署
+  push:
+    branches: [main, master]
+  # 也可以手动触发
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 拉取所有历史，用于版本管理（可选）
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20 # 指定 Node 版本
+          cache: 'npm' # 缓存依赖，加速构建
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Docusaurus site
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }} # GitHub 自动生成的 token
+          publish_dir: ./build # 要部署的目录
+          publish_branch: gh-pages # 部署到的分支
