@@ -8,6 +8,7 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
+    "deploy:gh-pages": "gh-pages -d build -b gh-pages",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
@@ -24,7 +25,8 @@
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.9.2",
-    "@types/marked": "4.0.8"
+    "@types/marked": "4.0.8",
+    "gh-pages": "^6.1.1"
   },
   "browserslist": {
     "production": [
