@@ -5,6 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
+  // 网站基础信息
   title: 'My Site', // 网站标题
   tagline: 'Dinosaurs are cool', // 网站标语
   favicon: 'img/favicon.ico', // 网站图标
@@ -14,38 +15,37 @@ const config: Config = {
     v4: true,
   },
 
-  // 生产环境的网站 URL
-  url: 'https://your-docusaurus-site.example.com',
-  // 网站部署的基础路径（GitHub Pages 通常需要设为 /仓库名/）
-  baseUrl: '/',
-
-  // GitHub Pages 部署相关配置
-  organizationName: 'playoo', // GitHub 组织/用户名
+  // GitHub Pages 部署核心配置（替换成你的实际信息）
+  url: 'https://playoo.github.io', // 你的 GitHub Pages 域名
+  baseUrl: '/xnav/', // 仓库名，若仓库是 playoo.github.io 则填 '/'
+  organizationName: 'playoo', // GitHub 用户名/组织名
   projectName: 'xnav', // GitHub 仓库名
+  deploymentBranch: 'gh-pages', // 部署到 gh-pages 分支
 
-  // 遇到无效链接时的处理方式（throw 表示抛出错误）
+  // 遇到无效链接时的处理方式（开发时用 warn，生产时建议用 throw）
   onBrokenLinks: 'warn',
 
   // 国际化配置
   i18n: {
-    defaultLocale: 'zh-Hans', // 默认语言
+    defaultLocale: 'zh-Hans', // 默认语言：简体中文
     locales: ['zh-Hans'], // 支持的语言列表
   },
 
+  // 预设配置
   presets: [
     [
       'classic', // 使用经典预设
       {
         docs: {
           sidebarPath: './sidebars.ts', // 侧边栏配置文件路径
-          editUrl: 'https://github.com/playoo/xnav/blob/main/', // 编辑文档的链接
+          editUrl: 'https://github.com/playoo/xnav/blob/main/', // 文档编辑链接
         },
         blog: {
           showReadingTime: true, // 显示阅读时长
           blogSidebarCount: 10, // 博客侧边栏显示的文章数量
           blogSidebarTitle: '最新文章', // 博客侧边栏标题
           postsPerPage: 5, // 每页显示的博客文章数
-          editUrl: 'https://github.com/playoo/xnav/blob/main/', // 编辑博客的链接
+          editUrl: 'https://github.com/playoo/xnav/blob/main/', // 博客编辑链接
           onInlineTags: 'warn', // 内联标签警告
           onInlineAuthors: 'warn', // 内联作者警告
           onUntruncatedBlogPosts: 'warn', // 未截断博客文章警告
@@ -57,6 +57,7 @@ const config: Config = {
     ],
   ],
 
+  // 主题配置
   themeConfig: {
     // 社交卡片图片
     image: 'img/docusaurus-social-card.jpg',
