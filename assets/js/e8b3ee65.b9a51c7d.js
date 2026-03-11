@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmy_docusaurus_site=globalThis.webpackChunkmy_docusaurus_site||[]).push([[1160],{3832(s){s.exports=JSON.parse('{"tags":[{"label":"\u788e\u788e\u8bed","permalink":"/xnav/blog/tags/\u788e\u788e\u8bed","count":6}]}')}}]);
