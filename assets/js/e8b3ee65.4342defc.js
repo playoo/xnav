@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmy_docusaurus_site=globalThis.webpackChunkmy_docusaurus_site||[]).push([[1160],{3832(s){s.exports=JSON.parse('{"tags":[{"label":"\u788e\u788e\u8bed","permalink":"/xnav/blog/tags/ssn","description":"\u788e\u788e\u5ff5 tag description","count":6}]}')}}]);
